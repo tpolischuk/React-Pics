@@ -4,12 +4,11 @@ class SearchBar extends React.Component {
 
     state = { term: ''};
 
+    // Use arrow functions to avoid problems with 'this' being undefined
     onFormSubmit = (event) => {
         event.preventDefault();
-        console.log(this.state.term);
+        this.props.onSubmit(this.state.term);
     }
-
-
 
     render() {
         return(
