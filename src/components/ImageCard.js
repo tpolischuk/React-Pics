@@ -20,8 +20,6 @@ class ImageCard extends React.Component {
         // Simplified ES6 syntax if the property and variable
         // have the same name
         this.setState({ spans });
-
-
     }
     
     render() {
